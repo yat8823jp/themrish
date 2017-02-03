@@ -14,7 +14,7 @@ WordPressのテーマ開発補助ツールです。
 
 ## install
 
-1. Download this theme
+1. Download to theme folder
 2. Command execute
  1. ` npm install `
  2. edit /gulpconfig.js
