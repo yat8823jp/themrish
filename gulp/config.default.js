@@ -6,8 +6,7 @@ export default  {
 	 *
 	 */
 	browserSync: {
-		// proxy: 'localhost:3000',
-		proxy: 'http://hsa.dev/', //自身のローカル環境に合わせて書き換えてください。
+		proxy: 'localhost:3000', //自身のローカル環境に合わせて書き換えてください。
 		files: [
 			"./style.css",
 			"./js/bundle.js",
