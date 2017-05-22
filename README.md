@@ -11,6 +11,7 @@ WordPressのテーマ開発補助ツールです。
 ## 依存アプリケーション
 - [npm](https://www.npmjs.com/)
 - [gulp](http://gulpjs.com/)
+- [babel](https://babeljs.io/)
 
 ## install
 
