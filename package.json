@@ -33,7 +33,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^4.3.5",
     "postcss-import": "^10.0.0",
-    "run-sequence": "^1.1.5",
+    "run-sequence": "^2.1.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
