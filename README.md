@@ -30,4 +30,5 @@ config.default.js にて browserSync のproxyだけを変えたい場合は、�
 
 ## version
 
-0.0.1 ベータリリース
+- 0.0.2 module update
+- 0.0.1 ベータリリース
