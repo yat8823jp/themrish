@@ -32,22 +32,22 @@ var processors = [
 
 
 gulp.task('sass', function () {
-
-	return gulp.src([config.sass.src])
-		.pipe(plumber())
-		.pipe(sourcemaps.init())
-		.pipe(bulkSass())
-		.pipe(sass({
+	return gulp.src( [ config.sass.src ] )
+		.pipe( plumber() )
+		.pipe( sourcemaps.init() )
+		.pipe( bulkSass() )
+		.pipe( sass( {
 			indentType: 'tab',
 			indentWidth: 1,
 			outputStyle: 'expanded'
-		}))
-		.on('error', handleErrors)
-		.pipe(postcss(processors))
-		.pipe(sourcemaps.write({
+		} ) )
+		.on( 'error', handleErrors )
+		.pipe( postcss( processors ) )
+		.pipe( sourcemaps.write ( {
 			includeContent: false,
 			sourceRoot: config.sass.sourceRoot
-		}))
+		} ) )
 		.pipe( debug() )
-		.pipe(gulp.dest(config.sass.dest));
+		.pipe( gulp.dest( config.sass.dest )
+	);
 });

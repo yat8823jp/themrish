@@ -35,6 +35,6 @@ gulp.task('copy', function() {
 		.pipe( gulp.dest( 'dist' ) );
 } );
 
-gulp.task('dist', function(cb){
+gulp.task( 'dist', function( cb ){
 	return runSequence( 'build', 'copy', cb );
-});
+} );

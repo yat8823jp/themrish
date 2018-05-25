@@ -32,24 +32,24 @@ import debug from 'gulp-debug';
 // ==================================
 
 
-var b = browserify(config.browserify.bundleOption)
-	.transform(babelify.configure({
+var b = browserify( config.browserify.bundleOption )
+	.transform( babelify.configure ( {
 		compact: false,
-		presets: ["es2015"]
-	}))
-	.transform(browserifyShim);
+		presets: [ "es2015" ]
+	} ) )
+	.transform( browserifyShim );
 
 
-gulp.task('browserify', function () {
+gulp.task( 'browserify', function () {
 
 	var bundle = function () {
-		b.bundle().on('error', handleErrors)
-			.pipe(source(config.browserify.filename))
-			.pipe(gulp.dest(config.browserify.dest));
+		b.bundle().on( 'error', handleErrors )
+			.pipe( source( config.browserify.filename ) )
+			.pipe( gulp.dest( config.browserify.dest ) );
 	};
-	if (global.isWatching) {
-		var bundler = watchify(b);
-		bundler.on('update', bundle);
+	if ( global.isWatching ) {
+		var bundler = watchify( b );
+		bundler.on( 'update', bundle );
 	}
 	return bundle();
-});
+} );

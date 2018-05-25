@@ -9,7 +9,5 @@ import gulp from 'gulp';
 // ==================================
 
 
-gulp.task('build', [ 'sass', 'browserify']);
-gulp.task('default', ['setWatch', 'build', 'watch', 'browserSync']);
-
-
+gulp.task( 'build', [ 'sass', 'browserify' ] );
+gulp.task( 'default', [ 'setWatch', 'build', 'watch', 'browserSync' ] );
