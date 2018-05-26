@@ -22,7 +22,7 @@ function themrish_title( $title ) {
 	} elseif ( is_singular() ) { //シングルページなら
 		$title = single_post_title( '', false );
 	}
-	// return $title;
+	return $title;
 }
 add_filter( 'pre_get_document_title', 'themrish_title' );
 
