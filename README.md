@@ -9,9 +9,11 @@ WordPressのテーマ開発補助ツールです。
 - jsコンパイラ
 
 ## 依存アプリケーション
-- [npm](https://www.npmjs.com/) version: v8.11.2 later
-- [gulp](http://gulpjs.com/)
-- [babel](https://babeljs.io/)
+- [node.js](https://nodejs.org/ja/) version: 8.11.2 later
+- [npm](https://www.npmjs.com/) version: 5.6.0 later
+- [gulp](http://gulpjs.com/) version: 3.9.1 later
+- [babel](https://babeljs.io/) babel2015
+- [browseryync](https://browsersync.io/) version: 2.11.1
 
 ## install
 
@@ -27,11 +29,13 @@ Edit ./gulpconfig.js
 
 ### proxy
 
+```
 export default {
     browserSync: {
         proxy: 'local.dev' //ご自身の開発環境似合わせてURLを設定
     }
 }; 
+```
 
 ### 注意点
 config.default.js にて browserSync のproxyだけを変えたい場合は、このファイルに直接変更してください。
