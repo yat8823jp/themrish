@@ -13,7 +13,7 @@ WordPressのテーマ開発補助ツールです。
 - [npm](https://www.npmjs.com/) version: 5.6.0 later
 - [gulp](http://gulpjs.com/) version: 3.9.1 later
 - [babel](https://babeljs.io/) babel2015
-- [browseryync](https://browsersync.io/) version: 2.11.1
+- [browsersync](https://browsersync.io/) version: 2.11.1
 
 ## install
 
