@@ -2,6 +2,8 @@
 
 for WordPress theme develop auxiliary tool
 
+[Version 2 Release](https://github.com/yat8823jp/themrishv2)
+
 WordPressのテーマ開発補助ツールです。
 
 - ブラウザシンクによるソースファイル保存時のページリロード
